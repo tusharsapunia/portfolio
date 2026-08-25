@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/616d9f38f9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--* Nav-Bar Starting -->
+    <button id="topBtn">↑</button>
+
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h2>Port<span>folio</span></h2>
+        </div>
+
+        <ul class="sidebar">
+          <li><i class="fa-solid fa-x" onclick="sidebarHide()"></i></li>
+          <li>
+            <a href="#home" class="side-link" onclick="sidebarHide()">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="side-link" onclick="sidebarHide()">About</a>
+          </li>
+          <li>
+            <a href="#service" class="side-link" onclick="sidebarHide()"
+              >Service</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="side-link" onclick="sidebarHide()"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <ul class="nav-items">
+          <li><a href="#home" class="navlink">Home</a></li>
+          <li><a href="#about" class="navlink">about</a></li>
+          <li><a href="#service" class="navlink">service</a></li>
+          <li><a href="#contact" class="navlink">contact</a></li>
+        </ul>
+
+        <!-- for mobile -->
+        <div class="menu-btn">
+          <i class="fa-solid fa-bars" onclick="sidebarShow()"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Nav-Bar Ending -->
+
+    <!-- Home section Starting -->
+
+    <section class="home" id="home">
+      <div class="home-container">
+        <h3>Hello, my name is</h3>
+        <h1>Gagan <span>Bajaj</span></h1>
+        <p>And i'm a <span id="typewriter"></span></p>
+        <a href="#" class="msg-me">Message-me</a>
+      </div>
+    </section>
+
+    <!-- Home section Ending -->
+
+    <!-- About section Starting -->
+
+    <section class="about" id="about">
+      <div class="about-container">
+        <h2 class="title">About me</h2>
+        <div class="about-content">
+          <div class="left-column">
+            <img src="images/image.png" alt="" />
+          </div>
+
+          <div class="right-column">
+            <h2>I'm <span>Gagan Bajaj</span> and I'm a</h2>
+            <p>
+              Senior WordPress Developer and Technical Lead with 3+ years of
+              progressive experience building, optimizing, and scaling
+              high-traffic WordPress and WooCommerce platforms. Strong expertise
+              in WordPress architecture, performance engineering, database
+              optimization, REST APIs, webhooks, subscription systems, and
+              third-party integrations. Experienced in handling
+              production-critical issues, improving Core Web Vitals, designing
+              scalable solutions, mentoring developers, and taking ownership of
+              technical architecture for large-scale learning and membership
+              platforms.
+            </p>
+            <a id="hii" href="images/Gagandeep_Arora_Resume.docx" download=""
+              >Download Cv</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section Ending -->
+
+    <!-- Service section Starting -->
+
+    <section class="skill" id="skill">
+      <div class="skill-container">
+        <h2 class="title-2">My Skills</h2>
+        <div class="skill-content">
+          <div class="card">
+            <div class="box">
+              <i class="fa-brands fa-wordpress"></i>
+              <div class="text">WordPress & Plugins</div>
+              <p>
+                WordPress Core, Custom Themes & Plugins, WooCommerce,
+                WooCommerce Subscriptions, LearnDash, BuddyBoss, GamiPress,
+                Members Plugin
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-chart-line"></i>
+              <div class="text">Performance & SEO</div>
+              <p>
+                Performance Engineering, Core Web Vitals, Lighthouse SEO,
+                High-Concurrency Optimization
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-sitemap"></i>
+              <div class="text">APIs & Architecture</div>
+              <p>
+                REST APIs, Webhooks, Event-Driven Architecture, Role-Based
+                Access Control
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-tv"></i>
+              <div class="text">Frontend</div>
+              <p>HTML5, CSS3, JavaScript (ES6+), React.js</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-database"></i>
+              <div class="text">Database</div>
+              <p>
+                MySQL/SQL, Custom Database Tables, Query Optimization, Data
+                Migration
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div class="text">Infrastructure & Security</div>
+              <p>
+                DigitalOcean Spaces, Media Offloading, Security Hardening, Bot
+                Mitigation
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <div class="text">Tools</div>
+              <p>
+                Git, GitHub, Postman, VS Code, Excel (Data Filtering &
+                Validation)
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <i class="fa-solid fa-users"></i>
+              <div class="text">Leadership</div>
+              <p>Team Leadership, Mentorship, Code Reviews, Hiring Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service section End -->
+
+    <!-- Contanct me section Starting -->
+
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h2 class="title">Contact-Me</h2>
+        <div class="contact-content">
+          <div class="contact-left">
+            <div class="text">Get in Touch</div>
+            <p>
+              I’m always excited to discuss new projects, collaboration
+              opportunities, or just chat about the latest in front-end
+              development. Feel free to reach out via email or connect with me
+              on LinkedIn.
+            </p>
+            <div class="icons">
+              <div class="row">
+                <i class="fas fa-user"></i>
+                <div class="info">
+                  <div class="head">Name</div>
+                  <div class="subtitle">Gagan Bajaj</div>
+                </div>
+              </div>
+              <div class="row">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="info">
+                  <div class="head">Address</div>
+                  <div class="subtitle">Mohali, Punjab, India</div>
+                </div>
+              </div>
+              <div class="row">
+                <i class="fas fa-envelope"></i>
+                <div class="info">
+                  <div class="head">Email</div>
+                  <div class="subtitle">gdbarora@gmail.com</div>
+                </div>
+              </div>
+              <div class="row">
+                <i class="fa-solid fa-phone"></i>
+                <div class="info">
+                  <div class="head">Phone Number</div>
+                  <div class="subtitle">9560816204</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-right">
+            <div class="text">Message me</div>
+            <form action="#">
+              <div class="fields">
+                <div class="field name">
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter Name"
+                    required
+                  />
+                </div>
+                <div class="field email">
+                  <input id="email" type="email" placeholder="Email" required />
+                </div>
+              </div>
+              <div class="field">
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder="Subject..."
+                  required
+                />
+              </div>
+              <div class="field textarea">
+                <textarea
+                  cols="20"
+                  rows="10"
+                  placeholder="Message...."
+                  required
+                ></textarea>
+              </div>
+              <div class="button">
+                <button type="submit" id="submit">Send message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <span
+        >Created By
+        <a
+          href="https://www.instagram.com/tushar_sapunia?igsh=emtjOHBlY2cycnl3"
+          target="main"
+          >TusharSapunia</a
+        >
+        | <span class="far fa-copyright"></span> 2026 All rights reserved.</span
+      >
+    </footer>
+    <!-- Footer section End -->
+
+    <script src="js/logic.js"></script>
+  </body>
+</html>
