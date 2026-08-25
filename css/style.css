@@ -1,0 +1,490 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --main-color: #fff;
+}
+
+/** Nav-Bar Starting */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 6px 16px;
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+header {
+  width: 100%;
+  min-width: 350px;
+  background-color: blue;
+  position: fixed;
+  z-index: 999;
+  box-shadow:
+    rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  height: 50px;
+  margin: 0 15px;
+}
+.logo {
+  color: #fff;
+  & span {
+    color: rgb(132, 23, 23);
+  }
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+}
+
+.navlink {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 20px;
+  position: relative;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.navlink::after {
+  content: " ";
+  position: absolute;
+  background-color: rgb(231, 121, 121);
+  height: 3px;
+  width: 0;
+  left: 10px;
+  bottom: -5px;
+  transition: 0.3s;
+}
+.navlink:hover::after {
+  width: 80%;
+}
+.menu-btn {
+  display: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 999;
+  display: none;
+  backdrop-filter: blur(100px);
+  background-color: rgba(0, 0, 255, 0);
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: flex-start;
+  list-style: none;
+  gap: 40px;
+  padding: 2.5rem;
+}
+
+.sidebar li {
+  width: 100%;
+  color: #fff;
+}
+
+.side-link {
+  color: white;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+.side-link:hover {
+  background-color: rgba(0, 0, 0, 0.495);
+}
+/** NavBar Ending */
+
+/*? Home section starting */
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/images/banner.jpg);
+  background-size: cover;
+}
+.home-container {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 16rem 0 0 90px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+
+  & h3 {
+    font-weight: 500;
+  }
+  & h1 span {
+    color: rgb(132, 23, 23);
+  }
+}
+.msg-me {
+  display: inline-block;
+  margin-top: 50px;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 8px 18px;
+  border-radius: 10px;
+  border: 1px solid blue;
+  color: white;
+  background-color: blue;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.msg-me:hover {
+  background-color: transparent;
+  color: blue;
+}
+
+/*? Home section ending */
+
+/*? About section Starting */
+
+.about {
+  width: 100%;
+  height: 100%;
+
+  /* max-height: 100vh; */
+}
+.title {
+  padding-top: 6%;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+}
+.about-content {
+  display: flex;
+  padding: 3% 20px 0 20px;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+}
+.left-column {
+  width: 45%;
+  margin: 0 2% 3% 6%;
+
+  & img {
+    width: 75%;
+    /* object-fit: cover;. */
+
+    /* padding-left: 5rem; */
+    border-radius: 13px;
+    background-color: #56abf2;
+  }
+}
+.right-column {
+  width: 55%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+
+  & h2 {
+    word-spacing: 2px;
+    padding-bottom: 15px;
+
+    & span {
+      color: rgb(184, 7, 48);
+    }
+  }
+  & p {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  & #hii {
+    text-decoration: none;
+    padding: 1.2rem 2.2rem;
+    border-radius: 10px;
+    border: 2px solid blue;
+    color: white;
+    background-color: blue;
+    font-weight: 400;
+  }
+  & #hii:hover {
+    background-color: transparent;
+    color: blue;
+  }
+}
+
+/*? About section ending */
+
+/*? service section Starting */
+
+.skill {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  margin-top: 5rem;
+}
+.skill-container {
+  max-width: 1300px;
+  padding-bottom: 30px;
+}
+
+.title-2 {
+  padding-top: 4%;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 600;
+  color: white;
+}
+.skill-content {
+  display: grid;
+  padding: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card {
+  /* width: calc(33% - 20px); */
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 2rem;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.box {
+  text-align: center;
+  color: white;
+
+  & i {
+    color: blue;
+    font-size: 2.5rem;
+    /* font-weight: 500; */
+    padding: 7px 0 13px 0;
+  }
+  & p {
+    color: rgba(239, 236, 236, 0.851);
+    padding-top: 20px;
+    font-size: 1.8rem;
+  }
+}
+
+.card:hover {
+  background-color: #0004fd;
+  scale: 1.03;
+
+  & i {
+    color: #fff;
+  }
+}
+
+.text {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/*? service section ending */
+
+/*? Contact - me  section Start */
+
+.contact {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-container {
+  max-width: 1300px;
+  padding-bottom: 0px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2%;
+  font-size: 1.5rem;
+}
+
+.contact-left {
+  width: 45%;
+  text-align: left;
+
+  & .text {
+    font-weight: 700;
+    margin-bottom: 9px;
+  }
+
+  & p {
+    letter-spacing: 1.5px;
+  }
+}
+.icons {
+  margin: 10px 0;
+}
+.row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+
+  & i {
+    color: #0004fd;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+}
+.info {
+  margin-left: 30px;
+
+  & .head {
+    font-weight: 600;
+  }
+
+  & .subtitle {
+    color: #222;
+  }
+}
+.contact-right {
+  width: 45%;
+}
+
+.fields {
+  display: flex;
+}
+
+.field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.name {
+  margin-right: 10px;
+}
+.textarea {
+  height: 80px;
+  width: 100%;
+}
+
+textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  resize: none;
+}
+
+input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+
+#submit {
+  text-decoration: none;
+  padding: 1.2rem 2.2rem;
+  border-radius: 10px;
+  border: 2px solid blue;
+  color: white;
+  background-color: blue;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+}
+#submit:hover {
+  color: #0004fd;
+  background-color: transparent;
+}
+
+/*? Contact - me section ending */
+
+footer {
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+
+  & span {
+    font-size: 20px;
+
+    & a {
+      text-decoration: none;
+      color: #0004fd;
+    }
+  }
+}
+
+/** Media Query for responsive */
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+    padding-right: 5px;
+  }
+  .about-content {
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .card {
+    width: 100%;
+  }
+  .contact-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 1rem;
+    text-align: left;
+  }
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+  .field {
+    width: 100%;
+  }
+  .slider {
+    height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+  .slider {
+    height: 200px;
+    width: 95%;
+  }
+}
